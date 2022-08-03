@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/hmanjun/blog-site/issues"
   },
-  "homepage": "https://github.com/hmanjun/blog-site#readme"
+  "homepage": "https://github.com/hmanjun/blog-site#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "sequelize": "^6.21.3"
+  }
 }
