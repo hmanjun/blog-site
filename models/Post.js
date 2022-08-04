@@ -10,7 +10,7 @@ Post.init({
         autoIncrement: true,
         primaryKey: true
     },
-    userID: {
+    user_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
