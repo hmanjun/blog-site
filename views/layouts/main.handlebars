@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fund My Project!</title>
+</head>
+
+<body>
+    <header>
+        <button>Home</button>
+        <button>Dashboard</button>
+        {{#if logged_in}}
+        <button>Logout</button>
+        {{else}}
+        <button>Login/Signup</button>
+        {{/if}}
+    </header>
+
+    <main>
+        {{{body}}}
+    </main>
+</body>
+
+</html>
