@@ -7,7 +7,7 @@ $(document).on("click", ".post-container", function () {
 
 //Go to home
 $(document).on("click", "#home-btn", () => {
-    window.open('https://hmanjun-blog-site.herokuapp.com/', "_self")
+    window.open('/', "_self")
 })
 
 //Add new comment
