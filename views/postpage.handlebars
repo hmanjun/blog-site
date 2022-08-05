@@ -1,0 +1,24 @@
+<div class="d-flex flex-column mb-2 bg-secondary">
+    <div class="d-flex flex-row">
+        <h3 class="text-success ms-1">{{post.user.username}} </h3>
+        <h3> {{post.createdAt}}</h3>
+    </div>
+    <h3>{{post.title}}</h3>
+    <h4>{{post.body}}</h4>
+</div>
+
+<div>
+    <h3>Add Comment</h3>
+    <input type="text" id="new-comment" data-post_id="{{post.id}}"><br>
+    <button id="add-comment-btn">Add</button>
+</div>
+
+{{#each post.comments}}
+<div class="d-flex flex-column mb-2 bg-warning">
+    <div class="d-flex flex-row">
+        <h3 class="text-success">{{user_id}}</h3>
+        <h3>{{createdAt}}</h3>
+    </div>
+    <h4>{{body}}</h4>
+</div>
+{{/each}}
