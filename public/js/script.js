@@ -5,6 +5,11 @@ $(document).on("click", ".post-container", function () {
     console.log(`Clicked on post with id of ${$(this).data("post_id")}`)
 })
 
+//Go to home
+$(document).on("click", "#home-btn", () => {
+    window.open('https://hmanjun-blog-site.herokuapp.com/', "_self")
+})
+
 //Add new comment
 $("#add-comment-btn").on("click", async function() {
     const body = $("#new-comment").val()
@@ -28,9 +33,6 @@ $("#login-btn").on("click", () => {
         "username": "gentest"
     }
     $.post('/api/user/login', data, () => {
-        /*
-        window.open('/', "_self")
-        $("#new-comment").val("")
-        */
+
     })
 })
